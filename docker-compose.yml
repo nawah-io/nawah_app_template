@@ -1,7 +1,7 @@
 version: '3.3'
 
 services:
-  limp_app:
+  nawah_app:
     build: .
     ports:
       - "8081:8081"
