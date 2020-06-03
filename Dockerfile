@@ -1,9 +1,11 @@
 FROM python:3.8.1
 
+WORKDIR /usr/src/app
+
 COPY . .
 
-RUN python -m limp install_deps
+RUN python . install_deps
 
 EXPOSE 8081
 
-CMD [ "python", "-m", "limp", "launch" ]
+CMD [ "python", ".", "launch" ]
