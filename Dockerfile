@@ -4,8 +4,10 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN python . install_deps
+RUN python -m pip install --user nawah_cli
+
+Run nawah install_deps
 
 EXPOSE 8081
 
-CMD [ "python", ".", "launch" ]
+CMD [ "nawah", "launch" ]
