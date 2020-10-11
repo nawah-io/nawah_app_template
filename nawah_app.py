@@ -1,9 +1,13 @@
 from nawah.classes import APP_CONFIG, PACKAGE_CONFIG, ATTR
 from nawah.enums import NAWAH_VALUES
 
+import nawah_packages
+packages = nawah_packages.packages
+
 config = APP_CONFIG(
     name='__PROJECT_NAME__',
     version='0.1.0',
+    default_package='__PROJECT_NAME__',
     # Use this App Config Attr to determine which env to use based on value of environment variable ENV
     env='__ENV__',
     envs={
