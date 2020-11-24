@@ -57,3 +57,5 @@ tests/*
 !tests/.gitkeep
 refs/*
 !refs/.gitkeep
+models/*
+!models/.gitkeep
