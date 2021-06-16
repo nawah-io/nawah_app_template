@@ -53,8 +53,6 @@ packages/*
 !packages/PROJECT_NAME
 logs/*
 !logs/.gitkeep
-tests/*
-!tests/.gitkeep
 refs/*
 !refs/.gitkeep
 models/*
