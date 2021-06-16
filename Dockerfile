@@ -1,13 +1,15 @@
 FROM python:3.8.1
 
+ARG PYPI_USERNAME
+ARG PYPI_PASSWORD
+
 WORKDIR /usr/src/app
 
 COPY . .
 
-RUN python -m pip install --user nawah_cli
 RUN python -m pip install -r requirements.txt
 
-Run nawah install_deps
+RUN nawah packages install
 
 EXPOSE 8081
 
