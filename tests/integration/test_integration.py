@@ -63,7 +63,7 @@ async def create_doc_as_admin(*, env):
 		'attr_any': 'This shall pass',
 		'attr_bool': 'This shall not pass.. defaults will change this into False', 
 		'attr_str': 'This, also, shall pass',
-		'attr_locale': {'na_NA': 'Your locale shall pass as well'},
+		'attr_locale': generate_attr(attr_type=ATTR.LOCALE()), # Value for Attr Type LOCALE depends on current App Config, let Nawah generate it
 		'attr_int': 1,
 		'attr_float': 1.1,
 		'attr_date': datetime.date.today().isoformat(),
